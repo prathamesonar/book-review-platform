@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "YOUR_UNIQUE_ID",
+		"name": "Book Review API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"password\": \"123456\"\n}",
+							"options": { "raw": { "language": "json" } }
+						},
+						"url": { "raw": "http://localhost:5000/api/users/register", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "users", "register"] }
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"john.doe@example.com\",\n    \"password\": \"123456\"\n}",
+							"options": { "raw": { "language": "json" } }
+						},
+						"url": { "raw": "http://localhost:5000/api/users/login", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "users", "login"] }
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Get All Books (Public)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": { "raw": "http://localhost:5000/api/books", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "books"] }
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Book (Protected)",
+					"request": {
+						"method": "POST",
+						"header": [ { "key": "Authorization", "value": "Bearer YOUR_JWT_TOKEN", "type": "text" } ],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"The Great Gatsby\",\n    \"author\": \"F. Scott Fitzgerald\",\n    \"description\": \"A novel about the American dream.\",\n    \"genre\": \"Fiction\",\n    \"year\": 1925\n}",
+							"options": { "raw": { "language": "json" } }
+						},
+						"url": { "raw": "http://localhost:5000/api/books", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "books"] }
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Get Reviews for a Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": { "raw": "http://localhost:5000/api/reviews/book/YOUR_BOOK_ID", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "reviews", "book", "YOUR_BOOK_ID"] }
+					},
+					"response": []
+				},
+				{
+					"name": "Add a Review (Protected)",
+					"request": {
+						"method": "POST",
+						"header": [ { "key": "Authorization", "value": "Bearer YOUR_JWT_TOKEN", "type": "text" } ],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookId\": \"YOUR_BOOK_ID\",\n    \"rating\": 5,\n    \"reviewText\": \"An absolute masterpiece!\"\n}",
+							"options": { "raw": { "language": "json" } }
+						},
+						"url": { "raw": "http://localhost:5000/api/reviews", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["api", "reviews"] }
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
