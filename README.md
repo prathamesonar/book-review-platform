@@ -81,17 +81,61 @@ To run this project on your local machine, follow these steps:
 ```bash
 git clone [https://github.com/your-username/book-review-platform.git](https://github.com/your-username/book-review-platform.git)
 cd book-review-platform
-
+```
 ### 2. Backend Setup
 ```bash
 cd backend
 npm install
-
+npm run dev
+```
 Create a .env file and add your variables
 MONGO_URI=YOUR_MONGO_URI_HERE
 JWT_SECRET=yourjwtsecretkey
 PORT=5000
 CORS_ORIGIN=http://localhost:5173
 
-Run the backend server
+The backend will be running on http://localhost:5000 
+
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
 npm run dev
+```
+The frontend will open on http://localhost:5173.
+
+## API Endpoints
+A brief overview of the main API routes available.
+
+User Routes
+POST /api/users/register: Register a new user.
+
+POST /api/users/login: Authenticate a user and get a token.
+
+GET /api/users/profile: (Protected) Get the logged-in user's profile.
+
+Book Routes
+GET /api/books: Get a paginated, searchable, and sortable list of all books.
+
+GET /api/books/:id: Get a single book by its ID.
+
+POST /api/books: (Protected) Add a new book.
+
+PUT /api/books/:id: (Protected) Update a book (only by its creator).
+
+DELETE /api/books/:id: (Protected) Delete a book (only by its creator).
+
+GET /api/books/mybooks: (Protected) Get all books added by the logged-in user.
+
+Review Routes
+GET /api/reviews/book/:bookId: Get all reviews for a specific book.
+
+POST /api/reviews: (Protected) Add a new review for a book.
+
+PUT /api/reviews/:id: (Protected) Update a review (only by its author).
+
+DELETE /api/reviews/:id: (Protected) Delete a review (only by its author).
+
+GET /api/reviews/myreviews: (Protected) Get all reviews written by the logged-in user.
+
+
