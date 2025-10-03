@@ -81,3 +81,17 @@ To run this project on your local machine, follow these steps:
 ```bash
 git clone [https://github.com/your-username/book-review-platform.git](https://github.com/your-username/book-review-platform.git)
 cd book-review-platform
+
+### 2. Backend Setup
+```bash
+cd backend
+npm install
+
+Create a .env file and add your variables
+MONGO_URI=YOUR_MONGO_URI_HERE
+JWT_SECRET=yourjwtsecretkey
+PORT=5000
+CORS_ORIGIN=http://localhost:5173
+
+Run the backend server
+npm run dev
