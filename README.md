@@ -1,6 +1,6 @@
 # 📚 Book Review Platform - MERN Stack
 
-A full-stack Book Review Platform built with the MERN stack (MongoDB, Express, React, Node.js). This project allows users to sign up, log in, add, and review books. It features a complete authentication system, CRUD operations for books and reviews, and a range of bonus features including live search, sorting, dark mode, and data visualization.
+A full-stack Book Review Platform built with the MERN stack (MongoDB, Express, React, Node.js). This project allows users to sign up, log in, add, and review books. It features a complete authentication system, CRUD operations for books and reviews, and a range of features including live search, sorting, dark mode, and data visualization.
 
 ---
 
@@ -11,21 +11,20 @@ A full-stack Book Review Platform built with the MERN stack (MongoDB, Express, R
 
 ---
 
-## ✨ Screenshots
+##  Screenshots
 
-*(Add your own screenshots here. You can capture images of the home page, book details page, profile, etc., and place them in a folder to link them here.)*
 
 | Home Page (Dark Mode)                                | Book Details Page                                      |
 | ---------------------------------------------------- | ------------------------------------------------------ |
-| ![Home Page](https://github.com/user-attachments/assets/55547a0b-4dfa-472d-b9a1-2982cc924597) | ![Book Details Page](./path/to/your/details-page.png) |
+| ![Home Page](https://github.com/user-attachments/assets/55547a0b-4dfa-472d-b9a1-2982cc924597) | ![Book Details Page](https://github.com/user-attachments/assets/fa6e259a-9ef9-43ab-877c-d34d34daae78) |
 
 | Profile Page                                      | Edit Review Modal                                      |
 | ------------------------------------------------- | ------------------------------------------------------ |
-| ![Profile Page](./path/to/your/profile-page.png) | ![Edit Review Modal](./path/to/your/edit-modal.png) |
+| ![Profile Page](https://github.com/user-attachments/assets/a4a2c276-8dc6-4472-bbda-a786eea85148) | ![Edit Review Modal](https://github.com/user-attachments/assets/f6b88da4-7df0-4e51-87d9-a5cf8670d8c6) |
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### Core Features
 * **User Authentication**: Secure sign-up and login system using JWT (JSON Web Tokens) and password hashing with `bcrypt`.
@@ -41,7 +40,7 @@ A full-stack Book Review Platform built with the MERN stack (MongoDB, Express, R
 * **Pagination**: The main book list is paginated (5 books per page) for better performance and user experience.
 * **Profile Page**: A dedicated page for users to see a list of books they've added and reviews they've written.
 
-### ⭐ Bonus Features
+### Extra Features
 * **Live Search & Filter**: A dynamic search bar that provides instant results as the user types. Users can also filter the book list by genre.
 * **Sorting**: Ability to sort the book list by published year or average rating.
 * **Data Visualization**: A modern **Donut Chart** on the book details page to show the rating distribution (built with Recharts).
