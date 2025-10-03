@@ -107,14 +107,14 @@ The frontend will open on http://localhost:5173.
 ## API Endpoints
 A brief overview of the main API routes available.
 
--User Routes
+**User Routes**
 -`POST /api/users/register`: Register a new user.
 
 -`POST /api/users/login`: Authenticate a user and get a token.
 
 -`GET /api/users/profile`: (Protected) Get the logged-in user's profile.
 
--Book Routes
+**Book Routes**
 -`GET /api/books`: Get a paginated, searchable, and sortable list of all books.
 
 -`GET /api/books/:id`: Get a single book by its ID.
@@ -127,7 +127,7 @@ A brief overview of the main API routes available.
 
 -`GET /api/books/mybooks`: (Protected) Get all books added by the logged-in user.
 
--Review Routes
+**Review Routes**
 `GET /api/reviews/book/:bookId`: Get all reviews for a specific book.
 
 -`POST /api/reviews`: (Protected) Add a new review for a book.
