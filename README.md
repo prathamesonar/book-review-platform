@@ -88,11 +88,18 @@ cd backend
 npm install
 npm run dev
 ```
-Create a .env file and add your variables
--MONGO_URI=YOUR_MONGO_URI_HERE
--JWT_SECRET=yourjwtsecretkey
--PORT=5000
--CORS_ORIGIN=http://localhost:5173
+# MongoDB connection string
+MONGO_URI=YOUR_MONGO_URI_HERE
+
+# Secret key for JWT authentication
+JWT_SECRET=yourjwtsecretkey
+
+# Backend server port
+PORT=5000
+
+# Allowed frontend origin (for CORS)
+CORS_ORIGIN=http://localhost:5173
+
 
 The backend will be running on http://localhost:5000 
 
