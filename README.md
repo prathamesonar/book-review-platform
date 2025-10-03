@@ -1,4 +1,4 @@
-# 📚 Book Review Platform - MERN Stack
+#  Book Review Platform - MERN Stack
 
 A full-stack Book Review Platform built with the MERN stack (MongoDB, Express, React, Node.js). This project allows users to sign up, log in, add, and review books. It features a complete authentication system, CRUD operations for books and reviews, and a range of features including live search, sorting, dark mode, and data visualization.
 
