@@ -7,7 +7,7 @@ const BookCard = ({ book }) => {
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
       <div className="p-6 flex-grow">
         <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-          <Link to={`/book/${book._id}`} className="hover:text-blue-500 dark:hover:text-blue-400">
+          <Link to={`/book/${book._id}`} state={{ book }} className="hover:text-blue-500 dark:hover:text-blue-400">
             {book.title}
           </Link>
         </h3>

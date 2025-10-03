@@ -39,6 +39,8 @@ const SignupPage = () => {
     }
   };
 
+  const inputStyles = "w-full p-2.5 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500";
+
   return (
     <div className="flex justify-center items-center">
       <div className="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
@@ -48,19 +50,19 @@ const SignupPage = () => {
         <form onSubmit={submitHandler} className="space-y-6">
           <div>
             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
-            <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className="w-full p-2.5 rounded-lg" required />
+            <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} className={inputStyles} required />
           </div>
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Email</label>
-            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-2.5 rounded-lg" required />
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className={inputStyles} required />
           </div>
           <div>
             <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Password</label>
-            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-2.5 rounded-lg" required />
+            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} className={inputStyles} required />
           </div>
           <div>
             <label htmlFor="confirmPassword" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm Password</label>
-            <input type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="w-full p-2.5 rounded-lg" required />
+            <input type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className={inputStyles} required />
           </div>
           <button type="submit" className="w-full text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center" disabled={loading}>
             Sign Up
