@@ -79,7 +79,7 @@ To run this project on your local machine, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/book-review-platform.git](https://github.com/your-username/book-review-platform.git)
+git clone [https://github.com/prathamesonar/book-review-platform.git](https://github.com/your-username/book-review-platform.git)
 cd book-review-platform
 ```
 ### 2. Backend Setup
